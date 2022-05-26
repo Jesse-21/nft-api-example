@@ -10,9 +10,9 @@ import { axiosClient } from "./axiosClient";
 const ALCHEMY_API_KEY = "demo";
 
 // https://docs.alchemy.com/alchemy/enhanced-apis/nft-api/getnfts
-const getNFTsForOwnerEndpoint = `https://eth-mainnet.g.alchemy.com/${ALCHEMY_API_KEY}/v1/getNFTs/`;
+const getNFTsForOwnerEndpoint = `https://polygon-mainnet.g.alchemy.com/v2/cTSytxgRrWftj7pY68_Gx7TDDdAU76TG/getNFTs/`;
 // https://docs.alchemy.com/alchemy/enhanced-apis/nft-api/getnftmetadata
-const getNFTsForOwnerByCollectionEndpoint = `https://eth-mainnet.g.alchemy.com/${ALCHEMY_API_KEY}/v1/getNFTsForOwnerByCollection/`;
+const getNFTsForOwnerByCollectionEndpoint = `https://polygon-mainnet.g.alchemy.com/v2/cTSytxgRrWftj7pY68_Gx7TDDdAU76TG/getNFTsForOwnerByCollection/`;
 
 /*
  * Fetches paginated list of NFT's owned by the given address.
@@ -82,8 +82,8 @@ async function getCollectionsForOwner(
 }
 
 async function runExamples(): Promise<void> {
-  const testOwnerAddress = "0x04f5df957ce0405ba0264eca6130161cfaa12571";
-  const testContractAddress = "0x60e4d786628fea6478f785a6d7e704777c86a7c6";
+  const testOwnerAddress = "0xF4a0b31Dc4A803e9a0EB7Fc49098c6e7666C38d4";
+  const testContractAddress = "0x23A4Aa802ec83E8475ce28c85C8034C1Ac916934";
 
   const firstPage = await getNFTsForOwner(testOwnerAddress);
   console.log("\nFirst NFT for first page of getNFTsForOwner");
