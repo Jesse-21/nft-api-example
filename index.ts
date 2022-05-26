@@ -7,7 +7,7 @@ import {
 import { axiosClient } from "./axiosClient";
 
 // Replace with your alchemy api key
-const ALCHEMY_API_KEY = "demo";
+const ALCHEMY_API_KEY = "cTSytxgRrWftj7pY68_Gx7TDDdAU76TG";
 
 // https://docs.alchemy.com/alchemy/enhanced-apis/nft-api/getnfts
 const getNFTsForOwnerEndpoint = `https://polygon-mainnet.g.alchemy.com/v2/cTSytxgRrWftj7pY68_Gx7TDDdAU76TG/getNFTs/`;
